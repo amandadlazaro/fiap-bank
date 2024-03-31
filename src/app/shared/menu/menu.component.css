@@ -1,0 +1,10 @@
+::ng-deep .mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+    --mdc-tab-indicator-active-indicator-color: #ff4081 !important;
+    --mat-tab-header-active-label-text-color: #ff4081 !important;
+    --mat-tab-header-active-ripple-color: #ff4081 !important;
+    --mat-tab-header-inactive-ripple-color: #ff4081 !important;
+    --mat-tab-header-active-focus-label-text-color: #ff4081 !important;
+    --mat-tab-header-active-hover-label-text-color: #ff4081 !important;
+    --mat-tab-header-active-focus-indicator-color: #ff4081 !important;
+    --mat-tab-header-active-hover-indicator-color: #ff4081 !important;
+}

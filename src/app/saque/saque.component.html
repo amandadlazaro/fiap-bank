@@ -1,0 +1,35 @@
+<div class="container-fluid mt-10">
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-icon aria-hidden="false" fontIcon="paid"></mat-icon>
+                <div class="titulo">
+                    <mat-card-title>Movimentações</mat-card-title>
+                </div>
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form">
+
+                <mat-radio-group aria-label="Selecione uma opção"  [(ngModel)]="tipoMovimentacao" name="tipoMovimentacao"  class="mr-30">
+                    <mat-radio-button value="saque" >Saque</mat-radio-button>
+                    <mat-radio-button value="deposito">Depósito</mat-radio-button>
+                </mat-radio-group>
+
+                <mat-form-field floatLabel="always">
+                    <mat-label>Valor</mat-label>
+                    <input matInput type="number" [formControl]="valorFormControl" class="example-right-align"
+                        placeholder="0,00">
+                    <span matTextPrefix>R$&nbsp;</span>
+
+                    @if (valorFormControl.hasError('required')) {
+                        <mat-error><strong>Por favor, inserir o valor</strong></mat-error>
+                    }
+                </mat-form-field>
+
+                <button mat-flat-button  mat-raised-button color="primary" class="ml-15" (click)="validarValor()" [disabled]="valorFormControl.invalid || !tipoMovimentacao" >Enviar</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

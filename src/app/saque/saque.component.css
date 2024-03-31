@@ -1,0 +1,29 @@
+.mt-10 {
+    margin-top: 10px;
+}
+
+
+.ml-15 {margin-left: 15px;}
+.titulo {
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+}
+
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+::ng-deep .mat-mdc-raised-button.mat-primary {
+    --mdc-protected-button-container-color: #ff4081 !important;
+}
+
+::ng-deep .mat-primary {
+    --mat-full-pseudo-checkbox-selected-icon-color: #ff4081 !important;
+    --mat-minimal-pseudo-checkbox-selected-checkmark-color: #ff4081 !important;
+}

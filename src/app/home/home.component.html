@@ -1,0 +1,18 @@
+<div class="container-fluid">
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-icon aria-hidden="false" fontIcon="paid"></mat-icon>
+                <div class="titulo">
+                    <mat-card-title>Saldo</mat-card-title>
+                </div>
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            {{saldo | currency: 'BRL'  }}
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<app-saque (recarregar)="getSaldo()"></app-saque>
